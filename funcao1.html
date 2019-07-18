@@ -1,0 +1,35 @@
+<html>
+
+<script>
+
+    function olah() {
+        return 'Olá Mundo !!!';
+    }
+
+    function digite(texto) {
+        let nome = prompt(texto);
+        return nome;
+    }
+
+    function soNumero(texto) {
+        let numero = '';
+    
+        do {
+            numero = prompt(texto);
+            numero = parseFloat(numero);
+            if (!isNaN(numero)) {
+                return numero;
+            }
+        
+        }while(isNaN(numero));
+    }
+    let numero1 = soNumero('Diga o Número 1');
+    let numero2 = soNumero('Diga o Número 2');
+
+    alert(numero1 + numero2);
+
+
+
+</script>
+
+</html>
